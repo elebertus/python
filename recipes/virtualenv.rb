@@ -18,7 +18,7 @@
 # limitations under the License.
 #
 
-include_recipe "python::pip"
+include_recipe "eblack_python::pip"
 
 python_pip "virtualenv" do
   action :install
