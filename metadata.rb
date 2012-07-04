@@ -9,11 +9,11 @@ version           "1.0.6"
 depends           "build-essential"
 depends           "yum"
 
-recipe "tmp_python", "Installs python, pip, and virtualenv"
-recipe "tmp_python::package", "Installs python using packages."
-recipe "tmp_python::source", "Installs python from source."
-recipe "tmp_python::pip", "Installs pip from source."
-recipe "tmp_python::virtualenv", "Installs virtualenv using the python_pip resource."
+recipe "eblack_python", "Installs python, pip, and virtualenv"
+recipe "eblack_python::package", "Installs python using packages."
+recipe "eblack_python::source", "Installs python from source."
+recipe "eblack_python::pip", "Installs pip from source."
+recipe "eblack_python::virtualenv", "Installs virtualenv using the python_pip resource."
 
 %w{ debian ubuntu centos redhat fedora freebsd }.each do |os|
   supports os
