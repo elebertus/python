@@ -20,6 +20,6 @@
 
 include_recipe "eblack_python::pip"
 
-python_pip "virtualenv" do
+eblack_python_pip "virtualenv" do
   action :install
 end
